@@ -1,3 +1,4 @@
+var cool = require('cool-ascii-faces');
 const path = require('path')  
 const express = require('express')  
 const exphbs = require('express-handlebars')
@@ -18,6 +19,12 @@ app.engine('.hbs', exphbs({
 }))
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
+
+app.get('/cool', function(request, response) {
+  response.send(cool());
+});
+
+
 app.listen(port, (err) =>{
   if(err){
     return console.log('something bad happend',err)

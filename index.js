@@ -20,7 +20,7 @@ app.engine('.hbs', exphbs({
 app.set('view engine', '.hbs')  
 app.set('views', path.join(__dirname, 'views'))  
 
-app.get('/cool', function(request, response) {
+app.get('/', function(request, response) {
   response.send(cool());
 });
 

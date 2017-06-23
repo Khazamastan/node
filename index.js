@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')  
 const exphbs = require('express-handlebars')
 const app = express()
-const port = 3004
+const port = 5000;
 app.get('/', (request, response) => {  
   response.render('home', {
     name: 'John'

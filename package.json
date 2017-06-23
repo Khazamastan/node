@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "2.5.6",
     "gulp": "^3.9.1",
     "gulp-analyze-css": "^0.1.0",
     "gulp-change": "^1.0.0",

@@ -8,6 +8,9 @@ app.get('/', (request, response) => {
     name: 'John'
   })
 })
+
+app.set('port', (process.env.PORT || 5000));
+
 app.engine('.hbs', exphbs({  
   defaultLayout: 'main',
   extname: '.hbs',
